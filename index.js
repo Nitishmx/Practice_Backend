@@ -1,5 +1,4 @@
 console.log("database connection");
-const { name } = require("ejs");
 let express = require("express");
 let app = express();
 app.get("/", (req, res) => {
@@ -18,8 +17,11 @@ mongoose
   });
 // database connection done
 
-// schemacreate
 
+
+
+
+// schemacreate
 let Userschema = mongoose.Schema({
   name: String,
   lastName: String,
@@ -30,6 +32,14 @@ let Userschema = mongoose.Schema({
 // collection create
 let User=mongoose.model("User",Userschema)
 // collection create done
+
+
+// collection inner data add
+let user=new User({name:"hye",last:"bye",num:1234,isBool:true})
+user.save()
+let n=new User({name:"good",lastName:"thank you",num:7878,isBool:false})
+n.save()
+// data addition done
 
 app.listen(4000, () => {
   console.log("server runing");
