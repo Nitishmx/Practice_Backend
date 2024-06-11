@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="image/download.png" type="image/x-icon" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="overflow_hidden.css">
+    <title>ZOMATO(Nitish)</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <!-- <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/81f3ff974d82520780078ba1cfbd453a1583259680 (1).avif" class="d-block w-100 image-first" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/81f3ff974d82520780078ba1cfbd453a1583259680 (1).avif" class="d-block w-100 image-first" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="image/81f3ff974d82520780078ba1cfbd453a1583259680 (1).avif" class="d-block w-100 image-first" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+        <img
+          src="image/81f3ff974d82520780078ba1cfbd453a1583259680 (1).avif"
+          alt=""
+          class="image-first"
+        />
+        <div class="subpart">
+          <nav class="nav-container">
+            <div class="navbar-containt">
+              <div class="home">
+                <!-- <a href="https://www.zomato.com/mobile" style="color: white;">Get the App</a> -->
+                <p style="color: white;">Get the App</p>
+              </div>
+              <div class="navbar-heading">
+                <a href="index10.html">
+                  <p style="color: white;">Investor Relations</p>
+                </a>
+                <a href="index2.html" style="list-style: none; color: white;"><p>Add restaurat</p></a>
+                <p id="loginp">Log in</p>
+                <p id="signup">Sign up</p>
+              </div>
+            </div>
+          </nav>
+          <div class="middlePart-containt">
+            <img
+              src="image/8313a97515fcb0447d2d77c276532a511583262271.avif"
+              alt=""
+              id="zomatoicon"
+            />
+            <p class="para">Discover the best food & drinks in Bhopal</p>
+            <div class="inputstyle">
+              <ion-icon name="location-outline" id="iconlocation"></ion-icon>
+              <select name="" id="bhopal">
+                <label for="go">Bhopal</label>
+                <option value="go">Bhopal</option>
+                <label for="go1">Bihar</label>
+                <option value="go1">Bihar</option>
+                <label for="go2">Mumbai</label>
+                <option value="go2">Mumbai</option>
+              </select>
+              <ion-icon name="search-outline" id="iconsearch"></ion-icon>
+              <input
+                type="text"
+                name=""
+                id="inputfill"
+                placeholder="Search for restaurant, cuisine or a dish"
+              />
+            </div>
+          </div>
+          <!-- form part  sing up part -->
+        <div class="form-part">
+            <div class="topsignup">
+              <h1 class="heading-parts">Sign up</h1>
+              <p id="iconcross">X</p>
+            </div>
+           
+            <!-- input field -->
+            <div class="input-form">
+              <input type="text" name="" id="firstinput11" placeholder="Full Name">
+              <input type="text" name="" id="secondinpu22" placeholder="Email">
+            </div>
+            <span class="checkboxhandle">
+              <input type="checkbox" name="" id="check11">
+              <p class="checkofpara">
+                I agree to Zomato's <span style="color: red;">Terms of Service, Privacy Policy </span>and <span style="color: red;">Content Policies</span></p>
+            </span>
+            <button id="buttonofform">Create Account</button>
+            <!-- <div style="display: flex;">
+              <div style="height: 1px; border: solid rgba(0, 0, 0, 0.562) 1px; margin-top: 2rem; width: 40%;"></div>
+              <div style="height: 1px; border: solid rgba(0, 0, 0, 0.562) 1px; margin-top: 2rem; width: 50%; margin-left: 36px;"></div>
+            </div>
+            <p style="position: absolute; font-size: 2rem; bottom: 74px; left: 210px;">or</p>
+            <p class="already">Already have an account? <span style="color:red">Log in</span> </p>
+            
+           -->
+        </div>
+
+        <!-- login part -->
+        <div class="login-part" id="loginpart">
+          <div class="topsignup">
+            <h1 class="heading-parts">Login</h1>
+            <p id="iconcross2">X</p>
+          </div>
+          <span class="checkboxhandle2">
+            <input type="tel" name="" id="check12" placeholder="Phone">
+          </span>
+          <button class="buttonotp">Send One Time Password</button>
+          <div style="display: flex;">
+            <div style="height: 1px; border: solid rgba(0, 0, 0, 0.562) 1px; margin-top: 2rem; width: 40%;"></div>
+            <div style="height: 1px; border: solid rgba(0, 0, 0, 0.562) 1px; margin-top: 2rem; width: 50%; margin-left: 36px;"></div>
+          </div>
+          <p style="position: absolute; font-size: 2rem; bottom: 111px; left: 210px;">or</p>
+          <div class="messagebox">
+            <i class="bi bi-envelope-at"></i>
+            <p class="para1111">Continue with Email</p>
+          </div>
+          <div class="googleicon">
+            <i class="bi bi-google"></i>
+          </div>
+          <div style="border: solid 1px rgba(0, 0, 0, 0.548); width: 100%; margin-top: 1rem;"></div>
+          <p class="lastparaoflogin">New to Zomato? <span style="color: red;">Create account</span></p>
+
+         
+        </div>
+        </div>
+      </div>
+      <!-- card selection start -->
+      <section class="sele">
+        <div class="car-box">
+          <!-- first card create -->
+          <div class="first-car">
+            <a href="popular.html">
+              <img
+              src="image/e5b8785c257af2a7f354f1addaf37e4e1647364814.avif"
+              alt=""
+              class="firscardimage"
+            />
+            </a>
+           
+            <p class="firstparacard">Order Online</p>
+            <p class="secondparacard">Stay home and order to your doorstep</p>
+          </div>
+          <!-- second box -->
+          <div class="first-car">
+            <a href="popular.html">
+              <img
+                src="image/d026b357feb0d63c997549f6398da8cc1647364915.avif"
+                alt=""
+                class="firscardimage"
+              />
+
+            </a>
+            <p class="firstparacard">Dining</p>
+            <p class="secondparacard">View the city's favourite dining</p>
+          </div>
+          <!-- third box -->
+          <div class="first-car">
+            <a href="popular.html">
+              <img
+                src="image/d9d80ef91cb552e3fdfadb3d4f4379761647365057.avif"
+                alt=""
+                class="firscardimage"
+              />
+
+            </a>
+            <p class="firstparacard">Nightlife and Clubs</p>
+            <p class="secondparacard">
+              Explore the city’s top nightlife outlets
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- second section -->
+      <section class="second-section">
+        <div class="collection-part">
+          <div class="collection-containt">
+            <h1>Collections</h1>
+            <p>
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Bhopal, based on trends
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="boxlist">
+        <div class="parent-card">
+          <!-- first card -->
+          <div class="fistcard1">
+            <a href="index10.html">
+              <img
+                src="image/61d06b1dc0a478a6216bcf07ff8b2d67_1686730150.avif"
+                alt=""
+                class="imagecardfist"
+              />
+
+            </a>
+            <div class="cardpara">
+              <p>9 Great Cafes</p>
+              <p>9 Places</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="fistcard1">
+            <a href="index10.html">
+              <img
+                src="image/a1e31eb92bb9951aaf1750d88497adb4_1686729607.avif"
+                alt=""
+                class="imagecardfist"
+              />
+
+            </a>
+            <div class="cardpara">
+              <p>16 Best Luxury Dining Places</p>
+              <p>9 Places</p>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="fistcard1">
+            <a href="index10.html">
+              <img
+                src="image/21ebc8e2867c6917de5b0eb1aae8174e_1686727622.avif"
+                alt=""
+                class="imagecardfist"
+              />
+
+            </a>
+            <div class="cardpara">
+              <p>10 Best Bars & Pubs</p>
+              <p>9 Places</p>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="fistcard1">
+            <a href="index10.html">
+              <img
+                src="image/293255cbfe49f4ebdb244c1bfc3a0f74_1686806499.avif"
+                alt=""
+                class="imagecardfist"
+              />
+
+            </a>
+            <div class="cardpara">
+              <p>10 Serene Rooftop Places</p>
+              <p>9 Places</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Popular localities in and around Bhopal -->
+      <section class="popular">
+        <h1>Popular localities in and around Bhopal</h1>
+        <div class="box-create-part">
+          <!-- first box create -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+            <!-- <h1>Maharana Pratap Nagar</h1>
+            <p>429 place</p> -->
+          </div>
+          <!-- second box -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+          </div>
+          <!-- third box -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+          </div>
+          <!-- fourth box -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+          </div>
+          <!-- fivth box -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+          </div>
+          <!-- six box -->
+          <div class="rectangle-box">
+            <a href="popular.html">
+              <h1>Maharana Pratap Nagar</h1>
+              <p>429 place</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get the Zomato app -->
+      <section class="zomatoapp">
+        <div class="midspace">
+          <span class="mobilesection">
+            <img src="image/f773629053b24263e69f601925790f301680693809.avif"id="mobileimage">
+            <div class="zomatoappleft">
+              <h1>Get the Zomato app</h1>
+              <div class="mobilpara">
+                <p>We will send you a link, open it on your phone to download </p>
+                <span>the app</span>
+              </div>
+              <div class="inputratio">
+                <div>
+                  <input type="radio" name="" id="email">
+                  <label for="email">Email</label>
+                </div>
+              <div>
+                <input type="radio" name="" id="p">
+                <label for="P">Phone</label>
+              </div>
+               
+              </div>
+              <div class="inputemail-button">
+                <input type="text" name="" id="inputemail" placeholder="Email">
+                <button>Share App Link</button>
+              </div>
+              <p id="downloadpara">Download app from</p>
+              <div class="twobutton">
+                <a href="index.html">
+                  <img src="image/23e930757c3df49840c482a8638bf5c31556001144.webp" alt="" id="firstbutton">
+
+                </a>
+                <a href="index.html">
+                  <img src="image/9f0c85a5e33adb783fa0aef667075f9e1556003622.webp" alt="" id="secondbutton">
+
+                </a>
+              </div>
+            </div>
+          </span>
+        </div>
+      </section>
+      <!-- Explore options near me -->
+      <section class="explore">
+        <h1>Explore options near me</h1>
+        <div>
+          <select class="explore-select">
+            <option selected>Bakery food near meBeverages food near meBiryani</option>
+         
+          </select>
+        </div>
+        <div>
+          <select class="explore-select">
+            <option selected>Bakeries near meBars near me</option>
+         
+          </select>
+        </div>
+        <div>
+          <select class="explore-select">
+            <option selected>Burger king</option>
+         
+          </select>
+        </div>
+        <div>
+          <select class="explore-select">
+            <option selected>Bakery food near meBeverages food near meBiryani</option>
+         
+          </select>
+        </div>
+      </section>
+      <!-- footer selection -->
+      <section class="lastselection1">
+        <div class="footer">
+          <div style="display: flex; justify-content: space-between;" class="logorigh-left">
+            <img src="image/b40b97e677bc7b2ca77c58c61db266fe1603954218.avif" alt="">
+            <div>
+              <!-- <select name="" id="">
+                <option value="">hye</option>
+              </select> -->
+            </div>
+          </div>
+          <div class="aboutcontaint">
+            <!-- first box -->
+            <div class="firstbox11">
+              <h1>ABOUT ZOMATO</h1>
+              <a href="https://www.zomato.com/who-we-are">
+                <p>Who we are</p>
+              </a>
+              <p>Blog</p>
+              <p>Work With Us</p>
+              <p>Investor Relations</p>
+              <p>Report Fraud</p>
+              <p>Press Kit</p>
+              <p>Contact Us</p>
+            </div>
+            <!-- second box -->
+            <div class="firstbox11">
+              <h1>ZOMAVERSE</h1>
+              <p>Zomato</p>
+              <p>Blinkit</p>
+              <p>Feeding India</p>
+              <p>Hyperpure</p>
+              <p>Zomaland</p>
+          
+            </div>
+            <!-- third box -->
+            <div class="firstbox11">
+              <h1>FOR RESTAURANTS</h1>
+              <p>Partner With Us</p>
+              <p>App For You</p>
+              <h1>FOR ENTERPRISES</h1>
+              <p>Zomato For Enterprise</p>
+             
+            </div>
+            <!-- fourth box -->
+            <div class="firstbox11">
+              <h1>LEARN MORE</h1>
+              <p>Privacy</p>
+              <p>Security</p>
+              <p>Terms</p>
+              <p>Sitemap</p>
+             
+            </div>
+            <!-- vth box -->
+            <div class="firstbox11">
+              <h1>SOCIAL LINKS</h1>
+             <div class="lasticon">
+              <i class="bi bi-linkedin"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
+              <i class="bi bi-youtube"></i>
+              <i class="bi bi-facebook"></i>
+             </div>
+             <div style="display: flex;flex-direction: column;">
+              <a href="https://www.zomato.com/mobile">
+                <img src="image/9f0c85a5e33adb783fa0aef667075f9e1556003622.webp" alt="" class="lastimagelogo1">
+
+              </a>
+              <a href="https://www.zomato.com/mobile">
+
+                <img src="image/23e930757c3df49840c482a8638bf5c31556001144.webp" alt="" class="lastimagelogo2">
+              </a>
+             </div>
+            </div>  
+          </div>
+        </div>
+        <div style="border: solid 1px rgba(0, 0, 0, 0.685); height: 1px; width: 74vw; margin: auto; margin-top: 2rem;"></div>
+        <div style=" height: 1px; width: 74vw; margin: auto; margin-top: 1rem;opacity: 0.80;">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</div>
+      </section>
+      </div>
+    </div>
+    <script src="logic.js"></script>
+  </body>
+</html>

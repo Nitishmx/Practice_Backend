@@ -1,15 +1,29 @@
-const { name } = require('ejs')
-let mongoose=require('mongoose')
+// const { name } = require('ejs')
+// let mongoose=require('mongoose')
+// let userSchema=mongoose.Schema({
+//     subject:String,
+//     mark:Number,
+//     totalMarks:Number,
+//     passStatus:Boolean,
+//     result:Boolean
+// })
+
+// let Good=mongoose.model('Good',userSchema)
+
+
+// // backend anythink export to use module
+// module.exports=Good
+
+
+
+// signup form schema create
+let mongoose=require("mongoose")
 let userSchema=mongoose.Schema({
-    subject:String,
-    mark:Number,
-    totalMarks:Number,
-    passStatus:Boolean,
-    result:Boolean
+    email:String,
+    password:String,
+    confirmPassword:String
 })
 
-let Good=mongoose.model('Good',userSchema)
-
-
-// backend anythink export to use module
-module.exports=Good
+// collection create
+let Sig=mongoose.model("Sig",userSchema)
+module.exports=Sig
